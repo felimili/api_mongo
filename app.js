@@ -2,7 +2,6 @@ import express from 'express'
 
 import { docRouter } from './routes/doc.js'
 import { usersRouter } from './routes/users.js'
-import { casosRouter } from './routes/casos.js'
 import { companiasRouter } from './routes/companias.js'
 import { analistasRouter } from './routes/analistas.js'
 import { corsMiddleware } from './middlewares/cors.js'
