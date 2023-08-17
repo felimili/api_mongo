@@ -1,0 +1,167 @@
+get http://localhost:3000
+
+###
+
+post http://localhost:3000
+
+###
+get http://localhost:3000/users
+
+###
+get http://localhost:3000/users?rol=Admin
+
+###
+get http://localhost:3000/users/2
+
+###
+get http://localhost:3000/casos
+
+###
+get http://localhost:3000/doc
+
+###
+get http://localhost:3000/doc/64dc11b2b191ce37653d6a65
+
+###
+post http://localhost:3000/doc
+Content-Type: application/json   
+
+{
+    "nombre": "Pasaporte"
+}   
+
+###
+DELETE http://localhost:3000/doc/64dc1787cdbf60e1cf3ddfcf
+
+###
+PATCH http://localhost:3000/doc/64dc11b2b191ce37653d6a65
+Content-Type: application/json   
+
+{
+    "nombre": "Registro.."
+}
+
+###
+PATCH http://localhost:3000/companias/2
+Content-Type: application/json   
+
+{
+    "nombre": "Provincia Seguros"
+}
+
+####
+post http://localhost:3000/users
+Content-Type: application/json   
+
+{
+    "nombre": "Juan",
+    "apellido": "Perez",
+    "username": "perez",
+    "password": "123456",
+    "rol": "Admin"
+}
+
+####
+PATCH  http://localhost:3000/users/64dbafe431f63aaf15521403
+Content-Type: application/json   
+
+{
+    
+    "password": "123456"
+    
+}
+
+###
+get http://localhost:3000/analistas
+
+###
+get http://localhost:3000/analistas/2
+
+###
+POST http://localhost:3000/analistas
+Content-Type: application/json
+
+{
+    "nombre": "Juan",
+    "apellido": "Perez"
+}
+
+###
+PATCH http://localhost:3000/analistas/7
+Content-Type: application/json
+
+{
+    "nombre": "Juan"
+    
+}
+
+###
+post http://localhost:3000/users
+Content-Type: application/json   
+
+{
+    "nombre": "Juan",
+    "apellido": "Perez",
+    "username": "perez",
+    "password": "123456",
+    "rol": "Inspector"
+}
+
+###
+DELETE http://localhost:3000/users/64dbfb728f55f76d3a3abed9
+
+###
+get http://localhost:3000/users
+
+###
+get http://localhost:3000/companias
+
+###
+post http://localhost:3000/companias
+Content-Type: application/json   
+
+{
+    "nombre": "Liberty"
+}
+
+###
+get http://localhost:3000/companias/64dc1b36b21e5c4908835c72
+
+###
+PATCH  http://localhost:3000/companias/64dc1b36b21e5c4908835c72
+Content-Type: application/json   
+
+{
+    "nombre": "Liberty Seguros"
+}
+
+###
+DELETE http://localhost:3000/companias/64dc1b36b21e5c4908835c72
+
+###
+POST http://localhost:3000/analistas
+Content-Type: application/json
+
+{
+    "nombre": "Ariel",
+    "apellido": "Giorno"
+}
+
+###
+get http://localhost:3000/analistas
+
+###
+GET http://localhost:3000/analistas/64dc2226f67a5fd16cc95c79
+
+###
+PATCH  http://localhost:3000/analistas/64dc2226f67a5fd16cc95c79
+Content-Type: application/json   
+
+{
+    "nombre": "Ariel Oscar"
+    
+}
+
+###
+DELETE http://localhost:3000/analistas/64dc2226f67a5fd16cc95c79
+
