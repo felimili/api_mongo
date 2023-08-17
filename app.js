@@ -17,7 +17,6 @@ app.disable('x-powered-by')
 
 app.use('/doc', docRouter)
 app.use('/users', usersRouter)
-app.use('/casos', casosRouter)
 app.use('/companias', companiasRouter)
 app.use('/analistas', analistasRouter)
 
